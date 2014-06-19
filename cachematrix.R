@@ -1,5 +1,4 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Two functions in this file implement persistance through caching inverted matrices
 
 ## This function caches inverted matrix
 
