@@ -34,7 +34,7 @@ cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
         
         ## check if inverted matrix exists, if so return its value
-        invMatrix <- x$getInverted()
+        invMatrix <- x$getInvertedMatrix()
         if (!is.null(invMatrix)){
                 message("getting inverted matrix")
                 return (invMatrix)
@@ -44,7 +44,7 @@ cacheSolve <- function(x, ...) {
         ## solve function is called with only one parameter forcing use of identity matrix
         data <- x$get()
         invMatrix <- solve(data)
-        x$setInverted(invMatrix)
+        x$invertMatrix(invMatrix)
         
         # return newly computed value
         invMatrix
